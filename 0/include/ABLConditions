@@ -17,7 +17,7 @@ zDir		(0 0 1);
 
 #ifeq $mode 1
     // 角度模式：動態 sin/cos 計算
-    flowDir ( #calc "-sin(degToRad($windDirection))"  #calc "cos(degToRad($windDirection))"  0 )
+    flowDir ( #calc "-sin(degToRad($windAngle))"  #calc "cos(degToRad($windAngle))"  0 )
 #endif 
 #ifeq $mode 2
 // 字串模式：16個風向角判斷
